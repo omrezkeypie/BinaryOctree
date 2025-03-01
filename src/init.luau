@@ -116,7 +116,7 @@ local function ReassignObjects(BinaryOctree : BinaryOctree,Node : number,NodePos
 	table.clear(NodeTable)
 end
 
-function BinaryOctreeModule.new(Size : number,MaxDepth : number?,OffsetPosition : Vector3?) : HashOctree
+function BinaryOctreeModule.new(Size : number,MaxDepth : number?,OffsetPosition : Vector3?) : BinaryOctree
 	local newBinaryOctree = {
 		MaxDepth = if MaxDepth then math.clamp(MaxDepth,1,10) else 5,
 		Size = Size,
