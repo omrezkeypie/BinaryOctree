@@ -6,8 +6,8 @@ This file is for use by Benchmarker (https://boatbomber.itch.io/benchmarker)
 |WARNING| THIS RUNS IN YOUR REAL ENVIRONMENT. |WARNING|
 --]]
 
-local BinaryOctreeModule = require(game.ServerScriptService.DarkageYap.BinaryOctree)
-local SleitnickModule = require(game.ServerScriptService.DarkageYap.SleitnickOctree)
+local BinaryOctreeModule = require("path to binaryoctree")
+local SleitnickModule = require("path to sleitnicks octree")
 
 local Dot = Vector3.zero.Dot
 local OctreeSize = 516
