@@ -9,7 +9,7 @@ BinaryOctree is an optimized octree that is both memory effiecent and cpu effiec
 **All the benchmarks shown use 1000 objects**
 
 Octree updating.
-![image](https://github.com/omrezkeypie/HashOctree/assets/104690138/7fac122a-370d-496b-98e9-69b730b6665f)
+![image](https://github.com/user-attachments/assets/5696fb01-e564-4306-92fb-e120682807f4)
 
 Octree querying.
 ![image](https://github.com/user-attachments/assets/35280f13-0c03-4f23-84f5-68528062539d)
