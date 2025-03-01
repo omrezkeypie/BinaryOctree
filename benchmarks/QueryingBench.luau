@@ -6,8 +6,8 @@ This file is for use by Benchmarker (https://boatbomber.itch.io/benchmarker)
 |WARNING| THIS RUNS IN YOUR REAL ENVIRONMENT. |WARNING|
 --]]
 
-local BinaryOctreeModule = require("path to binaryoctree")
-local SleitnickModule = require("path to sleitnicks octree")
+local BinaryOctreeModule = require("path to binary octree")
+local SleitnickModule = require("path to sleitnicks module")
 
 local Dot = Vector3.zero.Dot
 local OctreeSize = 516
@@ -18,7 +18,7 @@ for i = 1,1000 do
 	table.insert(Objects,{Position = Vector3.new(math.random(-OctreeSize,OctreeSize),math.random(-OctreeSize,OctreeSize),math.random(-OctreeSize,OctreeSize))})
 end
 
-local StartPosition = Vector3.zero
+local StartPosition = Vector3.new(50,1,50)
 
 local Radius = 30
 
