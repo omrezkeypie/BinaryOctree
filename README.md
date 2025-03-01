@@ -14,6 +14,9 @@ Octree updating.
 Octree querying.
 ![image](https://github.com/user-attachments/assets/35280f13-0c03-4f23-84f5-68528062539d)
 
+Link to sleitnicks octree module:
+https://github.com/Sleitnick/rbxts-octo-tree
+
 # API
 
 ```lua
