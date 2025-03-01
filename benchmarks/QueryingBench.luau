@@ -18,7 +18,7 @@ for i = 1,1000 do
 	table.insert(Objects,{Position = Vector3.new(math.random(-OctreeSize,OctreeSize),math.random(-OctreeSize,OctreeSize),math.random(-OctreeSize,OctreeSize))})
 end
 
-local StartPosition = workspace.StartPosition.Position
+local StartPosition = Vector3.zero
 
 local Radius = 30
 
