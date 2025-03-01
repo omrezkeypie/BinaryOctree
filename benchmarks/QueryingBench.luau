@@ -6,8 +6,7 @@ This file is for use by Benchmarker (https://boatbomber.itch.io/benchmarker)
 |WARNING| THIS RUNS IN YOUR REAL ENVIRONMENT. |WARNING|
 --]]
 
-local HashOctreeModule = require(game.ServerScriptService.DarkageYap.HashOctree)
-local OldOctreeModule = require(game.ReplicatedStorage.Shared.Octree)
+local BinaryOctreeModule = require(game.ServerScriptService.DarkageYap.BinaryOctree)
 local SleitnickModule = require(game.ServerScriptService.DarkageYap.SleitnickOctree)
 
 local Dot = Vector3.zero.Dot
@@ -36,12 +35,8 @@ local function LinearSearch()
 	return GottenObjects
 end
 
-local QueryHashOctree = HashOctreeModule.new(OctreeSize,5,Vector3.zero)
-HashOctreeModule.InsertObjects(QueryHashOctree,Objects)
-
-local QueryOldOctree = OldOctreeModule.new(Vector3.zero,OctreeSize)
-OldOctreeModule.InsertObjects(QueryOldOctree,Objects)
-
+local QueryBinaryOctree = BinaryOctreeModule.new(OctreeSize,5,Vector3.zero)
+BinaryOctreeModule.InsertObjects(QueryBinaryOctree,Objects)
 local SleitnickOctree = SleitnickModule.new(OctreeSize)
 
 local SleitNodes = {}
@@ -63,8 +58,7 @@ return {
 			SleitnickOctree:SearchRadius(StartPosition,Radius)
 		end,
 		["BinaryOctree Query Sphere"] = function(Profiler)
-			HashOctreeModule.QuerySphere(QueryHashOctree,StartPosition,Radius)
+			BinaryOctreeModule.QuerySphere(QueryBinaryOctree,StartPosition,Radius)
 		end,
 	},
 }
-
