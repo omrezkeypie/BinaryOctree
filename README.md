@@ -12,7 +12,7 @@ Octree updating.
 ![image](https://github.com/omrezkeypie/HashOctree/assets/104690138/7fac122a-370d-496b-98e9-69b730b6665f)
 
 Octree querying.
-![image](https://github.com/omrezkeypie/HashOctree/assets/104690138/1c9aac34-b5aa-4f8a-9d6f-e2c2336d11bb)
+![image](https://github.com/user-attachments/assets/35280f13-0c03-4f23-84f5-68528062539d)
 
 # API
 
