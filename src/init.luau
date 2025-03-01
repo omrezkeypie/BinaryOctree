@@ -272,7 +272,7 @@ function BinaryOctreeModule.QueryBox(BinaryOctree : BinaryOctree,Position : Vect
 	while #ChosenNodes > 0 do
 		local Node = table.remove(ChosenNodes)
 		local NodeTable = Nodes[Node]
-		local NodePosition,NodeSize = GetNodePositionAndSize(HashOctree,Node)
+		local NodePosition,NodeSize = GetNodePositionAndSize(BinaryOctree,Node)
 		if not DetectBoxOverlap(MinBound,MaxBound,NodePosition - NodeSize,NodePosition + NodeSize) then continue end
 
 		local ShifterNumber = Node * 8
